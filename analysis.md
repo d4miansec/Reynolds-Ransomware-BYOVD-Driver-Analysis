@@ -32,3 +32,8 @@ If the vulnerable driver is dropped successfully, it attempts to load the driver
 To load the driver the initial program needs specific Token privileges "SeLoadDriverPrivilege". 
 
 <img width="659" height="449" alt="image" src="https://github.com/user-attachments/assets/473cdc8c-3a26-49e4-b9f6-16dca16e42e1" />
+
+To set up the driver, the malware creates a new registry key named "NSecKrnl". 
+It then loads the driver into the kernel using "NtLoadDriver" and proceeds to send malicious IOCTL commands to terminate EDR, AV, and monitoring processes.
+
+<img width="541" height="122" alt="image" src="https://github.com/user-attachments/assets/3d1045cd-a115-4646-9a2c-fd64549ec9ac" />
