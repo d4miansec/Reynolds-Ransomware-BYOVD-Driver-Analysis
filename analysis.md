@@ -5,3 +5,18 @@ The executable is a 64-bit C++ PE compiled for Windows Vista (Timestamp: Novembe
 **SHA-256:** 6BD8A0291B268D32422139387864F15924E1DB05DBEF8CC75A6677F8263FA11D
 **MD5:**     F0BDB2ADD62B0196A50E25E45E370CC5
 
+<img width="807" height="261" alt="VirtualBoxVM_pOxpVrwX0E" src="https://github.com/user-attachments/assets/68a62245-f5d2-4bb3-a825-302db3b78f8e" />
+
+## Anti Analysis: UPX Packed
+This sample is packed with UPX. UPX is a very common packer used by many threat actors. It allows the actual program code to be storedd encoded in the binary, and at runtime extracted into memory and executed unpacked.
+This is done to prevent software from scanning the payload and detecting the malware.
+
+To unpack the sample you just have to download the original UPX packer from github and use the "-d" command line to reverse the sample.
+Now that we have unpacked it, we can observe typical ransomware strings.
+
+<img width="512" height="522" alt="image" src="https://github.com/user-attachments/assets/f37e9d50-3fb1-4941-bcbd-f06e351d80ff" />
+<img width="743" height="116" alt="image" src="https://github.com/user-attachments/assets/8e363202-bd10-4b86-ab33-c0659e68961d" />
+<img width="459" height="617" alt="image" src="https://github.com/user-attachments/assets/f6dbca09-dbe2-4037-82c2-6150a1e24e43" />
+
+In my point of view, this ransomware seems to still be in development because of lacking default features like network propagation or backup deletion.
+
