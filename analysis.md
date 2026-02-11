@@ -20,4 +20,7 @@ Now that we have unpacked it, we can observe typical ransomware strings.
 
 In my point of view, this ransomware seems to still be in development because of lacking default features like network propagation or backup deletion.
 
-Moving forward to analyzing the malware with Ghidra, we can actually see the BYOD (Bring technique.
+Next, as we analyze the malware using Ghidra, we can see the BYOVD (Bring Your Own Vulnerable Driver) technique in action.
+The actual vulnerable driver is embedded in the ransomware sample, decrypted at runtime using RC4, and then stored in the ProgramData folder as "02.sys."
+
+<img width="761" height="650" alt="image" src="https://github.com/user-attachments/assets/cba5c7a1-1bb5-4338-ae75-23ceda102ec2" />
