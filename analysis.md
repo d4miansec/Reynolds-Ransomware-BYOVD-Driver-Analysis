@@ -23,8 +23,11 @@ In my point of view, this ransomware seems to still be in development because of
 ## Exploring BYOVD
 
 Next, as we analyze the malware using Ghidra, we can see the BYOVD (Bring Your Own Vulnerable Driver) technique in action.
-The actual vulnerable driver is embedded in the ransomware sample, decrypted at runtime using RC4, and then stored in the ProgramData folder as "02.sys."
+The actual vulnerable driver is embedded in the ransomware sample, decrypted at runtime using RC4, and then stored in the ProgramData folder as "02.sys".
 
 <img width="761" height="650" alt="image" src="https://github.com/user-attachments/assets/cba5c7a1-1bb5-4338-ae75-23ceda102ec2" />
 
 The "SystemFunction032" function is often linked to cryptographic operations, specifically for encrypting and decrypting data with the RC4 algorithm.
+If the vulnerable driver is dropped successfully, it attempts to load the driver using the low-level function "NtLoadDriver".
+To load the driver the initial program needs specific Token privileges "SeLoadDriverPrivilege". 
+<img width="665" height="236" alt="image" src="https://github.com/user-attachments/assets/10697513-9ef5-4005-ae8d-376c3d32fcc2" />
