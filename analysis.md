@@ -20,6 +20,8 @@ Now that we have unpacked it, we can observe typical ransomware strings.
 
 In my point of view, this ransomware seems to still be in development because of lacking default features like network propagation or backup deletion.
 
+## Exploring BYOVD
+
 Next, as we analyze the malware using Ghidra, we can see the BYOVD (Bring Your Own Vulnerable Driver) technique in action.
 The actual vulnerable driver is embedded in the ransomware sample, decrypted at runtime using RC4, and then stored in the ProgramData folder as "02.sys."
 
