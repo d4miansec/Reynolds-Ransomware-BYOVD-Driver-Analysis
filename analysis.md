@@ -37,3 +37,4 @@ To set up the driver, the malware creates a new registry key named "NSecKrnl".
 It then loads the driver into the kernel using "NtLoadDriver" and proceeds to send malicious IOCTL commands to terminate EDR, AV, and monitoring processes.
 
 <img width="541" height="122" alt="image" src="https://github.com/user-attachments/assets/3d1045cd-a115-4646-9a2c-fd64549ec9ac" />
+<img width="670" height="668" alt="image" src="https://github.com/user-attachments/assets/24eb550d-7234-4bc5-ab49-07a8320f3473" />
