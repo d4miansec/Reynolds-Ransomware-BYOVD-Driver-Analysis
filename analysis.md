@@ -30,4 +30,5 @@ The actual vulnerable driver is embedded in the ransomware sample, decrypted at 
 The "SystemFunction032" function is often linked to cryptographic operations, specifically for encrypting and decrypting data with the RC4 algorithm.
 If the vulnerable driver is dropped successfully, it attempts to load the driver using the low-level function "NtLoadDriver".
 To load the driver the initial program needs specific Token privileges "SeLoadDriverPrivilege". 
-<img width="665" height="236" alt="image" src="https://github.com/user-attachments/assets/10697513-9ef5-4005-ae8d-376c3d32fcc2" />
+
+<img width="659" height="449" alt="image" src="https://github.com/user-attachments/assets/473cdc8c-3a26-49e4-b9f6-16dca16e42e1" />
