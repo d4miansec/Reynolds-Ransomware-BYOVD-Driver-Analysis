@@ -38,3 +38,44 @@ It then loads the driver into the kernel using "NtLoadDriver" and proceeds to se
 
 <img width="541" height="122" alt="image" src="https://github.com/user-attachments/assets/3d1045cd-a115-4646-9a2c-fd64549ec9ac" />
 <img width="670" height="668" alt="image" src="https://github.com/user-attachments/assets/24eb550d-7234-4bc5-ab49-07a8320f3473" />
+
+Here is the list of all AV and EDR solutions that the Reynolds Ransomware terminates if successful:
+
+* **SEDService.exe**
+* **SophosHealth.exe**
+* **SophosFS.exe**
+* **SSPService.exe**
+* **SophosFileScanner.exe**
+* **McsAgent.exe**
+* **McsClient.exe**
+* **SophosLiveQueryService.exe**
+* **SophosNetFilter.exe**
+* **SophosNtpService.exe**
+* **hmpalert.exe**
+* **Sophos.Encryption.BitLockerService.exe**
+* **SophosOsquery.exe**
+* **ccSvcHst.exe**
+* **SymCorpUI.exe**
+* **SISIPSService.exe**
+* **SISIDSService.exe**
+* **SmcGui.exe**
+* **sisipsutil.exe**
+* **sepWscSvc64.exe**
+* **MsMpEng.exe**
+* **CSFalconService.exe**
+* **cydump.exe**
+* **cyreport.exe**
+* **cyrestart.exe**
+* **cyrprtui.exe**
+* **cyserver.exe**
+* **cytool.exe**
+* **cytray.exe**
+* **cyuserserver.exe**
+* **CyveraConsole.exe**
+* **tlaworker.exe**
+* **ekrn.exe**
+* **eguiProxy.exe**
+* **egui.exe**
+* **aswEngSrv.exe**
+* **aswidsagent.exe**
+* **AvastUI.exe**
