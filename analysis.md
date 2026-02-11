@@ -24,3 +24,5 @@ Next, as we analyze the malware using Ghidra, we can see the BYOVD (Bring Your O
 The actual vulnerable driver is embedded in the ransomware sample, decrypted at runtime using RC4, and then stored in the ProgramData folder as "02.sys."
 
 <img width="761" height="650" alt="image" src="https://github.com/user-attachments/assets/cba5c7a1-1bb5-4338-ae75-23ceda102ec2" />
+
+The "SystemFunction032" function is often linked to cryptographic operations, specifically for encrypting and decrypting data with the RC4 algorithm.
