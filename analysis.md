@@ -8,7 +8,7 @@ The executable is a 64-bit C++ PE compiled for Windows Vista (Timestamp: Novembe
 <img width="807" height="261" alt="VirtualBoxVM_pOxpVrwX0E" src="https://github.com/user-attachments/assets/68a62245-f5d2-4bb3-a825-302db3b78f8e" />
 
 ## Anti Analysis: UPX Packed
-This sample is packed with UPX. UPX is a very common packer used by many threat actors. It allows the actual program code to be storedd encoded in the binary, and at runtime extracted into memory and executed unpacked.
+This sample is packed with UPX. UPX is a very common packer used by many threat actors. It allows the actual program code to be stored encoded in the binary, and at runtime extracted into memory and executed unpacked.
 This is done to prevent software from scanning the payload and detecting the malware.
 
 To unpack the sample you just have to download the original UPX packer from github and use the "-d" command line to reverse the sample.
@@ -20,3 +20,4 @@ Now that we have unpacked it, we can observe typical ransomware strings.
 
 In my point of view, this ransomware seems to still be in development because of lacking default features like network propagation or backup deletion.
 
+Moving forward to analyzing the malware with Ghidra, we can actually see the BYOD (Bring technique.
